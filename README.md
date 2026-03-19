@@ -1,4 +1,4 @@
-#All of my .files#
+# All of my .files #
 
 - bash_aliases.conf: collection of all my terminal aliases.
 
