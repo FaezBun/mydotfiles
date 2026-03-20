@@ -13,3 +13,9 @@
 - kitty.conf: All configuration files and keybindings for the Kitty terminal.
 
 - vim.conf:: My Vim configuration.
+
+LaTeX installation
+1. install texlive-latex-extra
+2. install vimtex 
+3. install zathura
+4. config in .vimrc
