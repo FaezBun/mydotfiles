@@ -15,8 +15,13 @@
 - vim.conf:: My Vim configuration.
 
 LaTeX Setup 
+
     1. Full LaTex Package 
+
     2. Zathura : PDF Viewer ( instant refresh when saved )
+
     3. Install LaTeX (of course)
+
     4. VimTex : IDE plugin for Latex
+
     5. Install vim-plug : plugin manager (install kalau belum)
