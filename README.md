@@ -16,9 +16,9 @@
 
 - app.py : Laptop acts as a media server since i use hotspot most of the time.
 
-1. python3 -m pip install mutagen Pillow --break-system-packages   
+    1. python3 -m pip install mutagen Pillow --break-system-packages   
 
-2. sudo apt update && sudo apt install python3-pip -y
+    2. sudo apt update && sudo apt install python3-pip -y
 
 LaTeX Setup 
 
