@@ -14,6 +14,9 @@
 
 - vim.conf:: My Vim configuration.
 
+- app.py : Laptop acts as a media server since i use hotspot most of the time.
+
+
 LaTeX Setup 
 
     1. Full LaTex Package 
