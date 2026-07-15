@@ -1,33 +1,33 @@
-# All of my .files #
+## 🛠️ Dotfiles & Configs
 
-- bash_aliases.conf: collection of all my terminal aliases.
+* **`bash_aliases.conf`**: My terminal aliases.
+* **`bashrc.conf`**: Default `.bashrc` with Kitty color support and startup ASCII art.
+* **`cmus.conf`**: Cmus music player setup (keybindings, colors, config).
+* **`keybind.conf`**: GNOME global keyboard shortcuts.
+* **`kitty.conf`**: Kitty terminal config and keybindings.
+* **`vim.conf`**: My Vim configuration.
 
-- bashrc.conf: Default .bashrc configuration with minor additions, including color support for my terminal (Kitty) and ASCII art displayed on startup.
+---
 
-- cmus.conf: My complete cmus setup, including keybindings, color scheme, and player configuration.
+## 🎵 Scripts & Media
 
-- copy_file.sh Automation script to copy music from the local music directory to a server (requires rsync to be installed).
+* **`copy_file.sh`**: Script to auto-copy music to a server (requires `rsync`).
+* **`app.py`**: Turns my laptop into a media server (useful since I mostly use a hotspot).
 
-- keybind.conf: Global keyboard shortcuts for the GNOME desktop environment.
+**Setup Commands for Media Server:**
 
-- kitty.conf: All configuration files and keybindings for the Kitty terminal.
+```bash
+sudo apt update && sudo apt install python3-pip -y
+python3 -m pip install mutagen Pillow --break-system-packages
 
-- vim.conf:: My Vim configuration.
+```
 
-- app.py : Laptop acts as a media server since i use hotspot most of the time.
+---
 
-    1. python3 -m pip install mutagen Pillow --break-system-packages   
+## ✍️ LaTeX Setup
 
-    2. sudo apt update && sudo apt install python3-pip -y
-
-LaTeX Setup 
-
-    1. Full LaTex Package 
-
-    2. Zathura : PDF Viewer ( instant refresh when saved )
-
-    3. Install LaTeX (of course)
-
-    4. VimTex : IDE plugin for Latex
-
-    5. Install vim-plug : plugin manager (install kalau belum)
+1. **Install LaTeX**: The core engine.
+2. **Full LaTeX Package**: The complete package for all fonts and formats.
+3. **Zathura**: PDF viewer (instant refresh when saved).
+4. **vim-plug**: Vim plugin manager (must install first).
+5. **VimTex**: IDE plugin for LaTeX inside Vim.
