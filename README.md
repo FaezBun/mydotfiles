@@ -31,3 +31,5 @@ python3 -m pip install mutagen Pillow --break-system-packages
 3. **Zathura**: PDF viewer (instant refresh when saved).
 4. **vim-plug**: Vim plugin manager (must install first).
 5. **VimTex**: IDE plugin for LaTeX inside Vim.
+
+hello
