@@ -1,25 +1,22 @@
-# Path : Dalam Music Dir
-# Usage : Automation script untuk tolak file (music) ke dalam server 
-# Pastikan dah install rsync
-
 #!/bin/bash
 
 # --- SETTING ---
-DEST_USER="f8un99"                
-DEST_IP="192.168.0.100"           
-DEST_DIR="/DATA/Media/Music"      
+# Menggunakan $HOME/a untuk merujuk kepada ~/a/
+SOURCE_DIR="$HOME/a/"
+DEST_USER="f8un99"
+DEST_IP="192.168.0.100"
+DEST_DIR="/DATA/Media/Music"
 
-echo "--- Memulakan hantaran lagu... ---"
+echo "--- Memulakan hantaran lagu dari $SOURCE_DIR ke $DEST_IP... ---"
 
-# --no-g --no-p (supaya dia tak gaduh pasal owner/group lama)
-# --temp-dir (paksa dia buat temp file dalam folder Music server)
+# Menggunakan $SOURCE_DIR sebagai punca data
 rsync -rvz --no-g --no-p --ignore-existing \
     --temp-dir="$DEST_DIR" \
     --include="*/" \
     --include="**/*.flac" \
     --include="**/*.mp3" \
     --exclude="*" \
-    ./ "$DEST_USER@$DEST_IP:$DEST_DIR/"
+    "$SOURCE_DIR" "$DEST_USER@$DEST_IP:$DEST_DIR/"
 
 if [ $? -eq 0 ]; then
     echo "--- ALHAMDULILLAH: Menjadi pun! ---"
