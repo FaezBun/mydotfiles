@@ -1,4 +1,4 @@
-# path: ~/.config/nvim
+# path: ~/.config/nvim/init.vim
 
 set number
 set relativenumber
