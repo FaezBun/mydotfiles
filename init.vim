@@ -38,6 +38,7 @@ syntax enable
 
 " Set your viewer"
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_compiler_method = 'latexmk'
 
 call plug#begin()
 Plug 'lervag/vimtex', {'tag': 'v2.15'} 
@@ -78,5 +79,4 @@ autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
 autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
 colorscheme default
 
-# Elakkan dia keluar log dari latex setiap kali compile
 let g:vimtex_quickfix_open_on_warning = 0
