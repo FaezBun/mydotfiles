@@ -77,3 +77,6 @@ inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
 autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
 colorscheme default
+
+# Elakkan dia keluar log dari latex setiap kali compile
+let g:vimtex_quickfix_open_on_warning = 0
