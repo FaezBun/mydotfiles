@@ -80,3 +80,11 @@ autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
 colorscheme default
 
 let g:vimtex_quickfix_open_on_warning = 0
+
+" identation Shift + Tab
+nnoremap <S-Tab> >>
+vnoremap <S-Tab> >gv
+
+" unidentation Backspace
+nnoremap <BS> <<
+vnoremap <BS> <gv
